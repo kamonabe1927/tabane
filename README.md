@@ -14,9 +14,11 @@ Node.js 22 以上が必要です。
 
 ```sh
 npm install
-npm run dev        # 開発サーバ（http://localhost:5173）
+npm run dev        # 開発サーバ（https://localhost:5173）
 npm test           # テスト
 npm run build      # 本番用ビルド（dist/）
 ```
+
+開発サーバは自己署名証明書の HTTPS で動きます。初回はブラウザに「この接続ではプライバシーが保護されません」と出るので、「詳細設定」→「localhost にアクセスする（安全ではありません）」で進んでください。
 
 このリポジトリは公開されています。API キーやパスワードなどの秘密情報はコミットしないでください（`.env` は `.gitignore` で除外しています）。
